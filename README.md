@@ -1,3 +1,3 @@
 # Jun Jiang
 
-http://junjiangdesign.com/aau/wnm608/Styleguide/
+Styleguide: http://www.junjiangdesign.com/aau/wnm608/Junjiang/styleguide/
