@@ -1,0 +1,26 @@
+.grid.gap {
+	margin-bottom: 50px;
+
+}
+
+footer {
+	text-align: center;
+}
+
+
+.article{
+	text-align: center;
+	margin-bottom: 70px;
+
+
+}
+
+
+footer {
+  color: black;
+  bottom: 0px;
+  height: 35px;
+  line-height: 35px;
+  width: 100%;
+  text-align: center;
+}
