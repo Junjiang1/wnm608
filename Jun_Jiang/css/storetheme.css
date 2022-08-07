@@ -1,0 +1,257 @@
+ :root {
+	--color-offwhite: #f4f4f4;
+}
+
+body{
+	background-color: var(--color-offwhite);
+}
+
+.btn {
+    margin: 30px auto;
+    width: 100%;
+    height: 50px;
+    /* border: 0.5px solid #000; */
+    border-radius: 8px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+    cursor: pointer;
+    color: black;
+    background-color: #EEEEEE;
+}
+button:hover {
+	background-color: orangered;
+	color: white;
+	transition-duration: 0.3s;
+	border: none;
+}
+
+
+
+
+.minimal {
+	background-image:
+	  linear-gradient(45deg, transparent 50%, gray 50%),
+	  linear-gradient(135deg, gray 50%, transparent 50%);
+	background-position:
+	  calc(100% - 20px) calc(1em + 2px),
+	  calc(100% - 15px) calc(1em + 2px);
+	background-size:
+	  5px 5px,
+	  5px 5px;
+	background-repeat: no-repeat;
+	min-width: 120px;
+    margin-top: 20px;
+  }
+  .minimal:focus {
+	background-image:
+	  linear-gradient(45deg, green 50%, transparent 50%),
+	  linear-gradient(135deg, transparent 50%, green 50%);
+	background-position:
+	  calc(100% - 15px) 1em,
+	  calc(100% - 20px) 1em;
+	background-size:
+	  5px 5px,
+	  5px 5px;
+	background-repeat: no-repeat;
+	border-color: green;
+	outline: 0;
+  }
+
+
+
+
+  .hidden {
+    display: none;
+}
+
+.favorite input:checked + label {
+    color: red;
+    transform: scale(1.5,1.5);
+}
+
+.favorite label {
+    transition: all 0.3s;
+    display: inline-block;
+    transform: scale(1,1);
+    color: var(--color-neutral-medium);
+}
+/* .toggle> */
+.toggle-box input[type="checkbox"] {
+	width: 0;
+	height: 0;
+	visibility: hidden;
+  }
+  
+  .toggle-box label {
+	display: block;
+	width: 80px;
+	height: 30px;
+	background-color: #f0f0f0;
+	border-radius: 100px;
+	position: relative;
+	cursor: pointer;
+	-webkit-transition: 0.5s;
+	transition: 0.5s;
+	border: 2px solid #A1A1A1;
+	/* -webkit-box-shadow: 0 0 50px #477a85; */
+			/* box-shadow: 0 0 50px #477a85; */
+  }
+  
+  .toggle-box label::after {
+	content: "";
+    width: 26px;
+    height: 26px;
+    background-color: #fff;
+    position: absolute;
+    border-radius: 70px;
+    top: 2px;
+    left: 3px;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+  
+  .toggle-box :checked + label:after {
+	left: calc(100% - 3px);
+	-webkit-transform: translateX(-100%);
+			transform: translateX(-100%);
+  }
+
+
+.title{
+	text-align: center;
+	margin-top: 50px;
+}
+footer{
+	text-align: center;
+}
+
+
+.figure.product {
+	border-radius: 0.5em;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, .1);
+	overflow: hidden;
+}
+
+.product-overlay {
+	position: relative;
+	overflow: hidden;
+}
+
+.product-overlay figcaption {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, .7);
+	opacity: 0;
+	transition: all .3s;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.product-overlay:hover figcaption {
+	opacity: 1;
+}
+
+.product-overlay .caption-body {
+	background-color: white;
+	border-radius: 0.5em;
+	padding: 1em;
+	tr
+	.product-overlay .caption-body {
+		transform: none;
+		padding: 0;
+	}
+}ansform: translateY(2em);
+	transition: all 0.3s;
+}
+
+.product-overlay:hover .caption-body {
+	transform: translateY(0);
+}
+
+.product-overlay img {
+	transform: scale(1, 1);
+	transition: all 0.3s;
+}
+
+.product-overlay:hover img {
+	transform: scale(1.4, 1.4)
+}
+
+@media (max-width:600px) {
+	.product-overlay figcaption {
+		position: relative;
+		display: block;
+		top: initial;
+		left: initial;
+		width: 100%;
+		height: initial;
+		opacity: 1;
+		background-color: initial;
+	}
+}
+
+.product-overlay .caption-body {
+		transform: none;
+		padding: 0;
+	}
+}
+
+.images-main img {
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+}
+
+.images-thumbs img {
+	width: 8em;
+	height: 6em;
+	object-fit: contain;
+}
+
+
+.menu-button label { display:none; }
+@media (max-width:767px) {
+
+	.navbar h1 {
+  
+    margin-left: 14px;
+}
+   .navbar .display-flex {
+      flex-wrap:wrap;
+   }
+   .navbar .nav {
+      width:100%;
+      display:none;
+   }
+   .navbar .nav-flex ul {
+      display:block;
+   }
+   .navbar .nav li {
+      line-height:2em;
+   }
+
+   .menu-button label {
+       display: block;
+       padding: 0 1em;
+   }
+
+   #menu:checked+.navbar .nav {
+      display:block;
+   }
+   
+  .m-flex .btn-group {
+    margin-right: 6px;
+} 
+
+
+.m-flex .minimal {
+    margin-right: -14px;
+}
+
+   }
